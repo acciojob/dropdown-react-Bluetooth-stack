@@ -143,16 +143,22 @@ function App() {
 	const [curCityIndx, setCurCityIndx] = useState(0);
 	const [curLandMarkIndx, setCurLandMarkIndx] = useState(0);
 
-	const handleStateChange = (e) => {
-		setCurStateIndx(e.target.value);
+	function handleStateChange (e) {
+		const value = parseInt(e.target.value)
+		setCurStateIndx(value);
+		setCurCityIndx(0);
+		setCurLandMarkIndx(0);
 	}
 
-	const handleCityChange = (e) => {
-		setCurCityIndx(e.target.value);
+	function handleCityChange (e) {
+		const value = parseInt(e.target.value)
+		setCurCityIndx(value);
+		setCurLandMarkIndx(0);
 	}
 
-	const handleLandMarkChange = (e) => {
-		setCurLandMarkIndx(e.target.value);
+	function handleLandMarkChange (e) {
+		const value = parseInt(e.target.value)
+		setCurLandMarkIndx(value);
 	}
 
 	// Do not alter/remove main div
