@@ -188,17 +188,28 @@ function App() {
 			<div id="state-description">
 				{states[curStateIndx].description}
 			</div>
+			<div id="state-title">
+				{states[curStateIndx].name}
+			</div>
+
 			<div id="city-name">
 				{states[curStateIndx].city[curCityIndx].name}
 			</div>
 			<div id="city-description">
 				{states[curStateIndx].city[curCityIndx].description}
 			</div>
+			<div id="city-title">
+				{states[curStateIndx].city[curCityIndx].name}
+			</div>
+
 			<div id="landmark-name">
 				{states[curStateIndx].city[curCityIndx].landmarks[curLandMarkIndx].name}
 			</div>
 			<div id="landmark-description">
 				{states[curStateIndx].city[curCityIndx].landmarks[curLandMarkIndx].description}
+			</div>
+			<div id="landmark-title">
+				{states[curStateIndx].city[curCityIndx].landmarks[curLandMarkIndx].name}
 			</div>
 		</div>
 	);
